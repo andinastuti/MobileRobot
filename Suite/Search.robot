@@ -17,6 +17,5 @@ User Should Be Able To Search Flight Number
     Tap Search Tab
     Input Flight Number             flight_id=${fligt_num}      
     Tap Search Button
-    Verify Message
 
     [Teardown]            Close Application

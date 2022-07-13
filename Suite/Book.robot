@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation       Book Flight Test Cases
 Library             AppiumLibrary
-Resource            ../PageObject/SearchFlight/BookKeyword.robot
-Resource            ../PageObject/Login/LoginKeyword.robot
+Resource            ../PageObject/BookKeywords.robot
+Resource            ../PageObject/LoginKeywords.robot
 Resource            ../PageObject/Base.robot
 
 *** Variables ***
@@ -26,3 +26,5 @@ User Should Be Able To Book Flight
     Choose Price
     Tap Confirm Button
     Verify Message Appears
+
+    [Teardown]            Close Application

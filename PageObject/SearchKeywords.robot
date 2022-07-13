@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation       Search Flight Number Related Keyword
 Library             AppiumLibrary
-Variables           ../PageObject/LoginLocators.yaml 
-Variables           ../PageObject/SearchLocators.yaml
+Variables           ../Resource/LoginLocators.yaml 
+Variables           ../Resource/SearchLocators.yaml
 
 *** Variables ***
 ${user_email}      support@ngendigital.com 
@@ -29,6 +29,3 @@ Tap Search Button
     Tap                             ${search_button}
     Sleep                           5s
 
-Verify Message
-    Element Should Be Visible       ${flight_number}
-    Sleep                           5s

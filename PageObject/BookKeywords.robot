@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation                       Search Flight Number Related Keyword
 Library                             AppiumLibrary
-Variables                           ../PageObjects/LoginLocator.yaml 
-Variables                           ../PageObjects/BookLocator.yaml
+Variables                           ../Resource/LoginLocators.yaml 
+Variables                           ../Resource/BookLocators.yaml
 
 *** Variables ***
 ${user_email}                       support@ngendigital.com 
@@ -39,7 +39,7 @@ Choose "To City"
 Choose "Class" 
     Tap                             ${class}
     sleep                           3s
-    #Tap                             ${first_class}
+    Tap                             ${first_class}
 
 Choose "Start Date"
     Tap                             ${start_date} 
@@ -53,9 +53,10 @@ Choose "End Date"
     Sleep                           3s
     Tap                             ${choose_end_date}
     Tap                             ${ok_button}
+    #Sleep                           3s
 
 Choose "Flight" Radiobutton
-    Tap                             ${flight_button}
+    Tap                             ${click_flight}
 
 Checklist "+/-1 Day" 
     Tap                             ${oneday}

@@ -9,10 +9,10 @@ class: com.example.myapplication:id/spinnerClass
 text_class : com.example.myapplication:id/textClass
 first_class: xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[2]
 start_date : com.example.myapplication:id/textStartDate
-choose_start_date: xpath=//android.view.View[@content-desc="01 August 2019"]
+choose_start_date: xpath=//android.view.View[@content-desc="04 August 2019"]
 ok_button: android:id/button1
 end_date : com.example.myapplication:id/textEndDate
-choose_end_date: xpath=//android.view.View[@content-desc="02 August 2019"]
+choose_end_date: xpath=//android.view.View[@content-desc="05 August 2019"]
 click_flight : com.example.myapplication:id/radioButtonFlight
 flight_hotel : com.example.myapplication:id/radioButtonFlightHotel
 oneday : com.example.myapplication:id/checkBoxDay

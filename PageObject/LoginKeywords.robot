@@ -2,7 +2,7 @@
 *** Settings ***
 Documentation       Search Flow Related Keyword
 Library             AppiumLibrary
-Variables           ../PageObject/LoginLocators.yaml 
+Variables           ../Resource/LoginLocators.yaml 
 
 *** Keywords ***
 Tap Sign in Icon

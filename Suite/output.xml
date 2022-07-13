@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220712 11:07:32.386" rpa="false" schemaversion="3">
-<suite id="s1" name="Search" source="D:\QA\MobileRobot\Suite\Search.robot">
-<test id="s1-t1" name="User Should Be Able To Login With Valid Data" line="12">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220713 20:27:33.989" rpa="false" schemaversion="3">
+<suite id="s1" name="Book" source="D:\QA\MobileRobot\Suite\Book.robot">
+<test id="s1-t1" name="User Should Be Able To Book Flight" line="12">
 <kw name="Open Flight Application" library="Base">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -18,109 +18,266 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220712 11:07:32.528" endtime="20220712 11:07:39.510"/>
+<status status="PASS" starttime="20220713 20:27:34.197" endtime="20220713 20:27:43.304"/>
 </kw>
-<status status="PASS" starttime="20220712 11:07:32.527" endtime="20220712 11:07:39.510"/>
+<status status="PASS" starttime="20220713 20:27:34.197" endtime="20220713 20:27:43.304"/>
 </kw>
-<doc>Test to verify that User Should Be Able To Login With Valid Data</doc>
-<status status="PASS" starttime="20220712 11:07:32.527" endtime="20220712 11:07:39.511"/>
-</test>
-<test id="s1-t2" name="User Should Be Able To Search Flight Number" line="15">
-<kw name="User Should Be Able To Login" library="SearchKeywords">
+<kw name="User Should Be Able To Login" library="BookKeywords">
 <kw name="Tap" library="AppiumLibrary">
 <arg>${signin_icon}</arg>
 <doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220712 11:07:39.513" endtime="20220712 11:07:40.462"/>
+<status status="PASS" starttime="20220713 20:27:43.306" endtime="20220713 20:27:44.155"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220712 11:07:45.467" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220712 11:07:40.462" endtime="20220712 11:07:45.467"/>
+<msg timestamp="20220713 20:27:49.156" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220713 20:27:44.155" endtime="20220713 20:27:49.156"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <arg>${user_email}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220712 11:07:45.469" level="INFO">Typing text 'support@ngendigital.com' into text field 'id=com.example.myapplication:id/username'</msg>
-<status status="PASS" starttime="20220712 11:07:45.467" endtime="20220712 11:07:45.511"/>
+<msg timestamp="20220713 20:27:49.160" level="INFO">Typing text 'support@ngendigital.com' into text field 'id=com.example.myapplication:id/username'</msg>
+<status status="PASS" starttime="20220713 20:27:49.157" endtime="20220713 20:27:49.221"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${password}</arg>
 <arg>${user_password}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220712 11:07:45.513" level="INFO">Typing text 'abc123' into text field 'id=com.example.myapplication:id/password'</msg>
-<status status="PASS" starttime="20220712 11:07:45.511" endtime="20220712 11:07:46.029"/>
+<msg timestamp="20220713 20:27:49.224" level="INFO">Typing text 'abc123' into text field 'id=com.example.myapplication:id/password'</msg>
+<status status="PASS" starttime="20220713 20:27:49.222" endtime="20220713 20:27:49.781"/>
 </kw>
 <kw name="Tap" library="AppiumLibrary">
 <arg>${signin_button}</arg>
 <doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220712 11:07:46.029" endtime="20220712 11:07:46.669"/>
+<status status="PASS" starttime="20220713 20:27:49.781" endtime="20220713 20:27:50.458"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220712 11:07:51.678" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220712 11:07:46.670" endtime="20220712 11:07:51.678"/>
+<msg timestamp="20220713 20:27:55.468" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220713 20:27:50.458" endtime="20220713 20:27:55.468"/>
 </kw>
-<status status="PASS" starttime="20220712 11:07:39.513" endtime="20220712 11:07:51.678"/>
+<status status="PASS" starttime="20220713 20:27:43.306" endtime="20220713 20:27:55.468"/>
 </kw>
-<kw name="Tap Search Tab" library="SearchKeywords">
+<kw name="Tap Book" library="BookKeywords">
 <kw name="Tap" library="AppiumLibrary">
-<arg>${search_tab}</arg>
+<arg>${book_tab}</arg>
 <doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220712 11:07:51.679" endtime="20220712 11:07:51.875"/>
+<status status="PASS" starttime="20220713 20:27:55.470" endtime="20220713 20:27:55.650"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220712 11:07:56.886" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220712 11:07:51.876" endtime="20220712 11:07:56.886"/>
+<msg timestamp="20220713 20:28:00.653" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220713 20:27:55.650" endtime="20220713 20:28:00.654"/>
 </kw>
-<status status="PASS" starttime="20220712 11:07:51.678" endtime="20220712 11:07:56.887"/>
+<status status="PASS" starttime="20220713 20:27:55.470" endtime="20220713 20:28:00.654"/>
 </kw>
-<kw name="Input Flight Number" library="SearchKeywords">
-<arg>flight_id= ${fligt_num}</arg>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>${search_field}</arg>
-<arg>${flight_id}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220712 11:07:56.889" level="INFO">Typing text ' DA935' into text field 'com.example.myapplication:id/flight_number'</msg>
-<status status="PASS" starttime="20220712 11:07:56.888" endtime="20220712 11:07:56.939"/>
-</kw>
-<status status="PASS" starttime="20220712 11:07:56.887" endtime="20220712 11:07:56.939"/>
-</kw>
-<kw name="Tap Search Button" library="SearchKeywords">
+<kw name="Choose &quot;From City&quot;" library="BookKeywords">
 <kw name="Tap" library="AppiumLibrary">
-<arg>${search_button}</arg>
+<arg>${from_city}</arg>
 <doc>Tap element identified by ``locator``. </doc>
-<status status="PASS" starttime="20220712 11:07:56.940" endtime="20220712 11:07:57.588"/>
+<status status="PASS" starttime="20220713 20:28:00.655" endtime="20220713 20:28:00.843"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:03.849" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:00.843" endtime="20220713 20:28:03.849"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${toronto}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:03.850" endtime="20220713 20:28:04.980"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:07.995" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:04.980" endtime="20220713 20:28:07.995"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:00.655" endtime="20220713 20:28:07.995"/>
+</kw>
+<kw name="Choose &quot;To City&quot;" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${to_city}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:07.997" endtime="20220713 20:28:08.187"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:11.200" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:08.187" endtime="20220713 20:28:11.200"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${paris}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:11.200" endtime="20220713 20:28:11.946"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:07.996" endtime="20220713 20:28:11.946"/>
+</kw>
+<kw name="Choose &quot;Class&quot;" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${class}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:11.948" endtime="20220713 20:28:12.154"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:15.161" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:12.154" endtime="20220713 20:28:15.161"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${first_class}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:15.161" endtime="20220713 20:28:15.912"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:11.947" endtime="20220713 20:28:15.913"/>
+</kw>
+<kw name="Choose &quot;Start Date&quot;" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${start_date}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:15.915" endtime="20220713 20:28:16.125"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:19.125" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:16.125" endtime="20220713 20:28:19.125"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${choose_start_date}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:19.125" endtime="20220713 20:28:19.992"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${ok_button}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:19.992" endtime="20220713 20:28:20.177"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:15.914" endtime="20220713 20:28:20.177"/>
+</kw>
+<kw name="Choose &quot;End Date&quot;" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${end_date}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:20.179" endtime="20220713 20:28:20.902"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:23.911" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:20.902" endtime="20220713 20:28:23.911"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${choose_end_date}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:23.911" endtime="20220713 20:28:24.787"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${ok_button}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:24.788" endtime="20220713 20:28:24.981"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:20.179" endtime="20220713 20:28:24.981"/>
+</kw>
+<kw name="Choose &quot;Flight&quot; Radiobutton" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${click_flight}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:24.983" endtime="20220713 20:28:25.707"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:24.982" endtime="20220713 20:28:25.707"/>
+</kw>
+<kw name="Checklist &quot;+/-1 Day&quot;" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${oneday}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:25.709" endtime="20220713 20:28:26.382"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:25.708" endtime="20220713 20:28:26.382"/>
+</kw>
+<kw name="Tap Book Button" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${book_button}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:26.382" endtime="20220713 20:28:27.058"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220712 11:08:02.589" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220712 11:07:57.588" endtime="20220712 11:08:02.589"/>
+<msg timestamp="20220713 20:28:32.074" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:27.059" endtime="20220713 20:28:32.074"/>
 </kw>
-<status status="PASS" starttime="20220712 11:07:56.940" endtime="20220712 11:08:02.589"/>
+<status status="PASS" starttime="20220713 20:28:26.382" endtime="20220713 20:28:32.075"/>
+</kw>
+<kw name="Choose Price" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${price}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:32.076" endtime="20220713 20:28:32.257"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:37.261" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:32.257" endtime="20220713 20:28:37.261"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:32.075" endtime="20220713 20:28:37.261"/>
+</kw>
+<kw name="Tap Confirm Button" library="BookKeywords">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${confirm_order}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220713 20:28:37.263" endtime="20220713 20:28:37.443"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:42.446" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:37.444" endtime="20220713 20:28:42.446"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:37.262" endtime="20220713 20:28:42.447"/>
+</kw>
+<kw name="Verify Message Appears" library="BookKeywords">
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${confirmation}</arg>
+<arg>${text_confirmation}</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220713 20:28:42.455" level="INFO">Verifying element 'com.example.myapplication:id/checkedTextView' contains text 'Your flight is booked. Reservation number is CADX2214'.</msg>
+<status status="PASS" starttime="20220713 20:28:42.449" endtime="20220713 20:28:42.502"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220713 20:28:47.510" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220713 20:28:42.502" endtime="20220713 20:28:47.510"/>
+</kw>
+<status status="PASS" starttime="20220713 20:28:42.448" endtime="20220713 20:28:47.510"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220712 11:08:02.590" endtime="20220712 11:08:02.838"/>
+<status status="PASS" starttime="20220713 20:28:47.511" endtime="20220713 20:28:47.840"/>
 </kw>
-<status status="PASS" starttime="20220712 11:07:39.512" endtime="20220712 11:08:02.838"/>
+<doc>Test to verify that User Should Be Able To Book Flight</doc>
+<status status="PASS" starttime="20220713 20:27:34.195" endtime="20220713 20:28:47.841"/>
 </test>
-<doc>Search Flight Number Test Cases</doc>
-<status status="PASS" starttime="20220712 11:07:32.387" endtime="20220712 11:08:02.840"/>
+<doc>Book Flight Test Cases</doc>
+<status status="PASS" starttime="20220713 20:27:33.990" endtime="20220713 20:28:47.843"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Search">Search</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Book">Book</stat>
 </suite>
 </statistics>
 <errors>
