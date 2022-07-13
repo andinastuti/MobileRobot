@@ -34,7 +34,6 @@ Choose "To City"
     Tap                             ${to_city}
     sleep                           3s
     Tap                             ${paris}
-    #Sleep                           3s
 
 Choose "Class" 
     Tap                             ${class}
@@ -46,14 +45,12 @@ Choose "Start Date"
     sleep                           3s
     Tap                             ${choose_start_date}
     Tap                             ${ok_button}
-    #sleep                           3s
 
 Choose "End Date"
     Tap                             ${end_date}
     Sleep                           3s
     Tap                             ${choose_end_date}
     Tap                             ${ok_button}
-    #Sleep                           3s
 
 Choose "Flight" Radiobutton
     Tap                             ${click_flight}
