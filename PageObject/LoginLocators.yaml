@@ -1,0 +1,5 @@
+signin_icon: id=com.example.myapplication:id/login
+username: id=com.example.myapplication:id/username
+password: id=com.example.myapplication:id/password
+signin_button: id=com.example.myapplication:id/signIn
+account_user: id=com.example.myapplication:id/textView

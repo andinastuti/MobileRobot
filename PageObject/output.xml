@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220710 08:14:05.746" rpa="false" schemaversion="3">
+<suite id="s1" name="Base" source="D:\QA\MobileRobot\PageObject\Base.robot">
+<test id="s1-t1" name="User Should Be Able To See Homepage" line="26">
+<kw name="Open Flight Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>newCommandTimeout=2500</arg>
+<arg>appActivity=${Activity_NAME}</arg>
+<arg>appPackage=${PACKAGE_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220710 08:14:05.975" endtime="20220710 08:14:16.657"/>
+</kw>
+<status status="PASS" starttime="20220710 08:14:05.974" endtime="20220710 08:14:16.657"/>
+</kw>
+<kw name="Element Should Be Visible" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/login</arg>
+<doc>Verifies that element identified with locator is visible.</doc>
+<status status="PASS" starttime="20220710 08:14:16.657" endtime="20220710 08:14:17.241"/>
+</kw>
+<status status="PASS" starttime="20220710 08:14:05.974" endtime="20220710 08:14:17.242"/>
+</test>
+<doc>Base related keyword</doc>
+<status status="PASS" starttime="20220710 08:14:05.749" endtime="20220710 08:14:17.243"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Base">Base</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
